@@ -1,0 +1,1798 @@
+:root {
+  /* Color Variables */
+  --primary-color: #155FF6;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --gray-color: #52525B;
+  --light-gray-color: #F6F9FB;
+  --dark-bg-color: #12141A;
+  --border-color: #B5C3D3;
+  --text-color: #3A404A;
+
+  /* Font Size Variables */
+  --font-size-small: 14px;
+  --font-size-medium: 16px;
+  --font-size-large: 18px;
+  --font-size-xl: 32px;
+  --font-size-xxl: 44px;
+  --font-size-heading: 52px;
+
+  /* Line Height Variables */
+  --line-height-small: 21px;
+  --line-height-medium: 24px;
+  --line-height-large: 27px;
+  --line-height-xl: 48px;
+  --line-height-heading: 66px;
+
+  /* Font Family */
+  --font-family-default: "Poppins", sans-serif;
+}
+.keyfeature img {
+  width: 15% !important;
+}
+.app_btn img{
+  width: auto;
+}
+body {
+  background-image: url('https://production-crm-public.s3.ap-southeast-1.amazonaws.com/apps/user/bitdelta/prelogin_background?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAVRXE6RJFFIXSKZUE%2F20240907%2Fap-southeast-1%2Fs3%2Faws4_request&X-Amz-Date=20240907T074333Z&X-Amz-Expires=3600&X-Amz-Signature=649d9b30d4610e52b65a14bc9e8a1800dd017db504a44a2bd419379d14c33b5a');
+}
+
+.register-container {
+  display: flex;
+  min-height: 100vh;
+  max-width: 550px;
+  width: 100%;
+}
+
+.form-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white-color);
+}
+
+.form-card {
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.background-section {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  flex-grow: 1;
+}
+
+/* MT5 Desktop Banner */
+.mt5desktop-banner {
+  background: url() no-repeat center right;
+  background-size: cover;
+  padding: 120px 0;
+}
+
+.mt5desktop-banner .left p {
+  font-size: var(--font-size-large);
+  line-height: var(--line-height-large);
+  font-weight: 600;
+  color: var(--white-color);
+}
+
+.mt5desktop-banner .btn-primary {
+  background-color: var(--primary-color);
+  font-size: var(--font-size-medium);
+  border-radius: 30px;
+  padding: 12px 40px;
+  color: var(--white-color);
+  font-weight: 600;
+}
+
+.mt5desktop-banner .left h1 {
+  font-size: var(--font-size-heading);
+  font-weight: 700;
+  line-height: 78px;
+  color: var(--white-color);
+}
+
+.img_banner_mobile {
+  position: relative;
+  top: -15px;
+}
+
+.mt5-content {
+  background-color: var(--dark-bg-color);
+  z-index: 1;
+}
+
+.text-white {
+  color: var(--white-color) !important;
+}
+
+.mt5-content h2 {
+  font-size: var(--font-size-xl);
+  line-height: var(--line-height-xl);
+}
+
+.fw-bold {
+  font-weight: 700 !important;
+}
+
+.mt5-content p {
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+  font-weight: 600;
+}
+
+.main-heading {
+  color: var(--black-color);
+  text-align: center;
+  font-weight: 700;
+  font-size: var(--font-size-xxl);
+  line-height: var(--line-height-heading);
+}
+
+.sub-heading {
+  font-size: var(--font-size-large);
+  line-height: var(--line-height-medium);
+  font-weight: 400;
+  color: var(--gray-color);
+}
+
+/* Key Feature Section */
+.keyfeature {
+  background-color: var(--light-gray-color);
+  padding: 60px 0;
+}
+
+.keyfeature .border-r {
+  border-right: 1px solid var(--border-color);
+}
+
+.keyfeature .border-b {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.keyfeature .main-card h4 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  color: var(--black-color);
+}
+
+.keyfeature .main-card p {
+  font-size: var(--font-size-small);
+  font-weight: 400;
+  line-height: var(--line-height-small);
+  color: var(--text-color);
+}
+
+.keyfeature .main-card img {
+  margin-bottom: 40px;
+}
+
+.getstarted-mt5 {
+  background-color: #EBF0F5;
+  padding: 50px 0px 30px 80px;
+  border-radius: 20px;
+}
+
+.border-white {
+  --bs-border-opacity: 1;
+  border-color: rgba(var(--bs-white-rgb), var(--bs-border-opacity)) !important;
+}
+
+.border-bottom {
+  border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+}
+
+.getstarted-mt5 .number {
+  background: #ffffff;
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+  border-radius: 50%;
+  line-height: 70px;
+  text-align: center;
+  color: #090914;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.getstarted-mt5 .left h4 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #090914;
+}
+
+.getstarted-mt5 .left p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #67748A;
+}
+
+.getstarted-mt5 .btn-primary {
+  background-color: #155FF6;
+  font-size: 16px;
+  border-radius: 30px;
+  padding: 12px 40px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.getstarted-mt5 img {
+  position: relative;
+  top: 100px;
+}
+
+.trade_metatrader {
+  background-color: #F6F9FB;
+  padding: 60px 0px;
+  margin-top: 90px;
+}
+
+.trade_metatrader .sub-heading {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.trade_metatrader .t-card h5 {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 600;
+  color: #090914;
+}
+
+.trade_metatrader .t-card p {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #67748A;
+}
+
+.trade_metatrader .t-card {
+  border: 1px solid #E4E4E7;
+  border-radius: 20px;
+}
+
+.bg-white {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.dowload_metatraderbanner {
+  position: relative;
+  width: 100%;
+}
+
+.dowload_metatraderbanner {
+  background: url("assets/downloadmetatrader.png")no-repeat center center;
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: cover;
+}
+
+.dowload_metatraderbanner img.w-100 {
+  width: 100%;
+  height: 350px;
+}
+
+.dowload_metatraderbanner .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #020017;
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.dowload_metatraderbanner .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 10;
+}
+
+.dowload_metatraderbanner {
+  position: relative;
+  width: 100%;
+}
+
+.dowload_metatraderbanner .content .btn-primary {
+  background-color: #155FF6;
+  font-size: 16px;
+  border-radius: 30px;
+  padding: 12px 24px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Media Queries */
+@media (max-width: 1199px) {
+  .dowload_metatraderbanner .content p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1270px) {
+  .dowload_metatraderbanner .content p {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 1270px) {
+  .dowload_metatraderbanner .content .btn-primary {
+    padding: 12px 18px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .main-heading {
+    font-size: 32px;
+    line-height: normal;
+  }
+}
+
+@media (max-width: 1199px) {
+  .dowload_metatraderbanner .content p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1270px) {
+  .dowload_metatraderbanner .content p {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 1270px) {
+  .dowload_metatraderbanner .content .btn-primary {
+    padding: 12px 18px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1270px) {
+  .sub-heading {
+    font-size: 16px !important;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 1270px) {
+  .trade_metatrader .t-card h5 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .getstarted-mt5 img {
+    top: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .trade_metatrader {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 576px) {
+  .getstarted-mt5 {
+    padding: 50px 20px 50px 20px;
+  }
+}
+
+@media (max-width: 1270px) {
+  .getstarted-mt5 .number {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1270px) {
+  .getstarted-mt5 .left h4 {
+    font-size: 14px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .getstarted-mt5 .btn-primary {
+    font-size: 12px;
+    padding: 12px 18px;
+  }
+}
+
+@media (max-width: 1270px) {
+  .main-heading {
+    font-size: var(--font-size-xl);
+    line-height: normal;
+  }
+}
+
+@media (max-width: 1270px) {
+  .keyfeature .main-card img {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .px-md-0 {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .mb-md-2 {
+    margin-bottom: 0.5rem !important;
+  }
+
+  .mb-md-4 {
+    margin-bottom: 1.5rem !important;
+  }
+
+  .mt-md-4 {
+    margin-top: 1.5rem !important;
+  }
+}
+
+@media (max-width: 1199px) {
+  .mt5desktop-banner {
+    background-position: right;
+    padding: 40px 0;
+  }
+}
+
+@media (min-width: 991px) and (max-width: 1299px) {
+  .mt5desktop-banner {
+    background-position: center;
+    padding: 100px 0;
+    min-height: 450px;
+  }
+}
+
+@media (max-width: 1270px) {
+  .mt5desktop-banner .left h1 {
+    font-size: var(--font-size-xl);
+    line-height: 44px;
+  }
+
+  .mt5desktop-banner .left p {
+    font-size: var(--font-size-large);
+  }
+
+  .mt5desktop-banner .btn-primary {
+    padding: 12px 18px;
+    font-size: var(--font-size-small);
+  }
+
+  .keyfeature .main-card img {
+    margin-bottom: 30px;
+  }
+}
+
+/*  */
+/* metatrader5 app css */
+/*  */
+.mt5-hero-banner {
+  background-image: url("assets/mt5-mobile-bg-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  min-height: 550px;
+  position: relative;
+}
+
+.mt5-hero-banner .mt5-banner-details h1 {
+  color: #fff;
+  font-size: 52px;
+  font-weight: 700;
+  margin: 0;
+  line-height: normal;
+}
+
+.mt5-hero-banner .mt5-banner-details {
+  background-size: cover;
+  padding: 109px 0px;
+  background-position: center right;
+}
+
+.mt5-hero-banner .mt5-banner-details .banner-text {
+  max-width: 701px;
+  font-weight: 700;
+}
+
+.mt5-hero-banner .mt5-banner-details p {
+  color: #fff;
+  font-weight: 600;
+  padding: 16px 0px;
+  max-width: 475px;
+  margin: 0;
+}
+
+.mt5-hero-banner .mt5-banner-details .cta-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.mt5-hero-banner .mt5-banner-details .cta-wrapper .app_btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  color: #fff;
+  padding: 8px 16px 8px 16px;
+  border: 1px solid #FFFFFF;
+  font-size: 14px;
+  border-radius: 24px;
+  gap: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.mobile-buy-sell-container {
+  margin-top: 4.5rem !important;
+}
+
+.mobile-buy-sell-container .mobile-buy-sell-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile-buy-sell-wrapper img {
+  width: 400px;
+}
+
+.mobile-buy-sell-details {
+  max-width: 55%;
+}
+
+.mobile-buy-sell-details h2 {
+  color: #000000;
+  font-size: 44px;
+  font-weight: 700;
+  margin: 0 0 25px;
+  line-height: normal;
+}
+
+.download-container {
+  margin: 4.5rem 0 !important;
+}
+
+.download-container .download-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.download-container .download-wrapper .get-started {
+  width: 40%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.download-container .download-wrapper .get-started h2 {
+  color: #000000;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 0 0 25px;
+}
+
+.download-container .download-wrapper .get-started p {
+  color: #67748A;
+}
+
+.download-container .download-wrapper .get-started button {
+  color: #fff;
+  padding: 10px 24px;
+  border: 1px solid #FFFFFF;
+  font-size: 16px;
+  border-radius: 24px;
+  background-color: #155FF6;
+}
+
+.download-container .download-wrapper .download-steps {
+  width: 40%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 24px;
+  background-color: #EBF0F5;
+  border-radius: 20px;
+}
+
+.download-container .download-wrapper .download-steps .steps {
+  border-bottom: 1px solid #FFFFFF;
+  padding: 12px;
+  padding-bottom: 12px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin: 15px 0px;
+  padding-bottom: 30px;
+}
+
+.circle {
+  width: 72px;
+  height: 72px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.download-container .download-wrapper .download-steps .steps .steps-details {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 85%;
+}
+
+.download-container .download-wrapper .download-steps .steps h3 {
+  color: #090914;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 0px;
+}
+
+.number {
+  font-size: 24px;
+  font-weight: 600;
+  color: #090914;
+}
+
+.download-container .download-wrapper .download-steps .steps p {
+  color: #67748A;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.why_trade .img_box_trade img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.why_trade .img_box_trade h4 {
+  font-size: 22px;
+  font-weight: 600;
+  padding: 20px 0px 6px;
+}
+
+.why_trade .img_box_trade p {
+  color: #67748A;
+  font-size: 13px;
+  line-height: 21px;
+  font-weight: 500;
+}
+
+.platform-faq .faq-main {
+  margin: 60px auto;
+}
+
+.platform-faq .faq-heading {
+  color: #000;
+  height: 66px;
+  font-feature-settings: "clig"off, "liga"off;
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.rounded {
+  border-radius: 0.375rem !important;
+}
+
+.platform-faq .accordion-item {
+  border: none;
+  margin: 16px 0px;
+  background-color: #eee;
+  color: #000000 !important;
+}
+
+.accordion-header {
+  margin-bottom: 0;
+}
+
+.platform-faq .accordion-item .accordion-button {
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #eee;
+}
+
+.platform-faq .accordion-item .accordion-button.collapsed:focus {
+  font-weight: 700;
+  color: #000000 !important;
+}
+
+.platform-faq .accordion-item .accordion-body {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 991px) {
+  .platform-faq .faq-main {
+    margin: 40px 0px 60px 0px !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .platform-faq .faq-heading {
+    height: 96px;
+    font-size: 32px !important;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 991px) {
+  .download-container .download-wrapper {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 991px) {
+  .download-container .download-wrapper .get-started {
+    width: 100%;
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .download-container .download-wrapper .get-started p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .get-started a {
+    margin: 0 auto;
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .download-container .download-wrapper .download-steps {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1270px) {
+  .download-container .download-wrapper .download-steps .steps {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 1270px) {
+  .download-container .download-wrapper .download-steps .steps p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1270px) {
+  .download-container .download-wrapper .download-steps .steps h3 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1270px) {
+  .download-container .download-wrapper .download-steps .steps {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 1270px) {
+  .steps .circle {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 1270px) {
+  .steps .circle .number {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 991px) {
+  .mobile-buy-sell-container {
+    margin-top: 2.5rem !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .mobile-buy-sell-container .mobile-buy-sell-wrapper {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 767px) {
+  .mobile-buy-sell-details {
+    text-align: center;
+  }
+}
+
+@media (max-width: 991px) {
+  .mobile-buy-sell-details h2 {
+    font-size: 32px;
+    margin: 0 0 25px;
+    text-align: center;
+    line-height: normal;
+  }
+}
+
+@media (max-width: 991px) {
+  .mobile-buy-sell-details p {
+    color: #475569;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .mobile-buy-sell-details {
+    max-width: 100%;
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .mobile-buy-sell-wrapper img {
+    max-width: 320px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 1199px) {
+  .mt5-hero-banner .mt5-banner-details {
+    padding: 55px 0px;
+  }
+}
+
+@media (max-width: 1270px) {
+  .mt5-hero-banner .mt5-banner-details h1 {
+    font-size: 32px;
+    line-height: normal;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner-text {
+    background-image: linear-gradient(#12141b, rgb(68 68 68 / 7%)) !important;
+    max-width: 850px;
+    text-align: center !important;
+    line-height: 1.4 !important;
+    margin-bottom: 0;
+    font-weight: 600;
+    margin-top: 0 !important;
+    padding: 0px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .mobileBg {
+    background: #12141b;
+    position: relative;
+    padding: 42px 22px 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner-text h2 {
+    font-size: 32px !important;
+    color: #fff;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner-text .lead {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 767px) {
+  .img_banner_mobile img {
+    -webkit-transform: scale(1) !important;
+    transform: scale(1) !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .img_banner_mobile img {
+    width: 100%;
+  }
+}
+
+/* forex trading page  */
+.introducing-broker .box_trade {
+  width: 50%;
+}
+
+.introducing-broker img {
+  border-radius: 8px;
+}
+
+.introducing-broker .box_trade {
+  width: 50%;
+}
+
+.introducing-broker .sub-heading {
+  font-size: 14px !important;
+}
+
+.feature-item {
+  padding: 18px 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.feature-number {
+  font-size: 40px;
+  font-weight: 500;
+  color: #B5C3D3;
+  position: relative;
+  top: -8px;
+}
+
+.feature-title {
+  font-weight: 600;
+  color: #090914;
+  padding-left: 20px;
+  font-size: 18px;
+}
+
+.feature-subheading {
+  color: #67748A;
+  padding-left: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+}
+
+@media (min-width: 1441px) {
+  .introducing-broker .gap-xxl-5 {
+    gap: 5rem !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .introducing-broker .box_trade.tab_view_img {
+    text-align: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .introducing-broker .box_trade {
+    width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .introducing-broker .box_trade img {
+    width: 60% !important;
+    margin: 0 auto;
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 576px) {
+  .introducing-broker .box_trade img {
+    width: 100% !important;
+  }
+}
+
+
+
+@media (max-width: 1199px) {
+  .introducing-broker img {
+    padding-right: 0px;
+  }
+}
+
+@media (max-width: 992px) {
+  .introducing-broker .box_trade {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .introducing-broker .details {
+    padding: 0px 20px;
+    margin: 0 auto;
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 1399px) {
+  .introducing-broker .main-heading {
+    margin-bottom: 2px !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .main-heading {
+    font-size: 32px;
+    line-height: 48px;
+  }
+}
+
+/*  */
+
+/* forex page */
+.trade-across .titile {
+  text-align: center;
+}
+.trade-across .titile h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 44px;
+  padding-top: 100px;
+}
+.trade-across .titile h2 span {
+  color: #155FF6 !important;
+}
+.trade-across .main-tab-wrapper {
+  border: 0.5px solid #CDD2D7;
+  border-radius: 16px;
+  padding: 30px 25px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+.trade-across .box .market-title {
+  font-weight: 700;
+  font-size: 18px;
+}
+.trade-across .box .market-title .title {
+  border-bottom: 3px solid #155FF6;
+  font-size: 18px;
+  font-weight: 600;
+}
+.trade-across .box .trade-title .trade {
+  font-size: 16px;
+  color: #155FF6;
+}
+.trade-across .box .trade-title .trade a {
+  text-decoration: none;
+}
+.how_to_start {
+  background-color: #F6F9FB;
+  padding-top: 60px;
+}
+.how_to_start .feature-number {
+  top: 0;
+}
+.how_to_start .start_box {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  margin: 50px 0px 90px;
+  height: 220px;
+}
+.how_to_start .start_box.active {
+  background-color: #3D7DFF;
+  color: #fff;
+}
+.how_to_start .start_box:hover {
+  background: #3d7cff;
+  color: #fff;
+  transition: 0.5s;
+}
+.explore_market {
+  padding: 40px 0px 100px;
+}
+.explore_market .bg_market {
+  background: #EBF0F5 url(assets/comm-background.png) no-repeat bottom right;
+    background-image: url("assets/comm-background.png");
+  padding: 50px;
+  border-radius: 18px;
+  margin-top: 40px;
+}
+.explore_market h4 {
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 40px;
+}
+.explore_market h4 span {
+  border-bottom: 3px solid #3D7DFF;
+  padding-bottom: 4px;
+}
+.explore_market .left_content p {
+  color: #4A505C;
+  padding-bottom: 26px;
+}
+.explore_market .left_content .br_btn {
+  border-bottom: 1px solid #fff;
+  padding: 12px 0px 20px;
+  align-items: center;
+}
+.explore_market .left_content .list img {
+  background: #fff;
+  padding: 10px;
+  border-radius: 50px;
+}
+.explore_market .left_content .list h5 {
+  font-size: 20px;
+  margin-bottom: 0px;
+  font-weight: 600;
+}
+.explore_market .bg_market img {
+  border-radius: 12px;
+}
+@media (max-width: 767px) {
+  .explore_market .left_content .w-75 {
+    width: 100% !important;
+  }
+}
+@media (max-width: 767px) {
+  .explore_market .left_content .br_btn {
+    padding: 16px 0px 18px;
+  }
+}
+@media (max-width: 767px) {
+  .explore_market .bg_market img {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1399px) {
+  .explore_market .left_content .list h5 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .bg_market .right_img {
+    padding: 0;
+  }
+}
+@media (max-width: 767px) {
+  .explore_market .bg_market img {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1399px) {
+  .explore_market .left_content p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .how_to_start .start_box {
+    height: auto;
+    margin: 20px 0px;
+  }
+}
+@media (max-width: 1399px) {
+  .feature-number {
+    font-size: 32px;
+  }
+}
+@media (max-width: 1399px) {
+  .main-heading {
+    font-size: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .trade-across .main-tab-wrapper {
+    padding: 10px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .how_to_start .start_box {
+    height: 250px;
+  }
+}
+/*  */
+/* client page */
+.client-hero-banner .banner-text {
+  max-width: 550px;
+  font-weight: 600;
+  padding: 120px 0px;
+}
+.client-hero-banner .banner-text h1 {
+  font-weight: 700;
+}
+.client-hero-banner .banner-text h1 {
+  color: #ffffff;
+  font-size: 52px;
+  font-weight: 600;
+  max-width: 300px;
+}
+.client-hero-banner .banner-text p {
+  color: #ffffff;
+  font-weight: 400;
+  padding: 20px 0px;
+  max-width: 400px;
+}
+.client .main-clint-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.client .main-clint-wrapper .title-benefits {
+  margin: 40px 0px;
+}
+.client .main-clint-wrapper .text-wrapper {
+  padding: 60px 40px 0px 0px;
+}
+.client .main-clint-wrapper .text-wrapper .institutional {
+  max-width: 100px;
+  margin-bottom: 20px;
+}
+.client .main-clint-wrapper .text-wrapper .institutional h4 {
+  font-weight: 600;
+}
+.client .main-clint-wrapper .text-wrapper .institutional h4 span {
+  font-weight: 400;
+}
+.client .main-clint-wrapper .divider {
+  margin-top: 70px;
+}
+.client .main-clint-wrapper .learnBtn {
+  margin: 40px 0px;
+  text-align: center;
+}
+.client .main-clint-wrapper .learnBtn button {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 40px;
+  background-color: #155FF6;
+}
+@media (max-width: 767px) {
+  .client-hero-banner-mobile .client-banner-image-mobile .mobile-image {
+    display: block;
+    height: 400px;
+  }
+  .client-image img{
+    height: 400px;
+  }
+}
+@media (max-width: 1270px) {
+  .client-hero-banner {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 1270px) {
+  .client-hero-banner .banner-text p {
+    padding: 0px 0px;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 1270px) {
+  .client-hero-banner {
+    min-height: auto;
+  }
+}
+/* introducing-broker page */
+.how-work-ib {
+  background-color: #020017;
+}
+.how-work-ib .why-bitdelta {
+  padding-right: 6rem;
+  padding-left: 7rem;
+}
+.how-work-ib h2 {
+  color: #ffffff;
+  font-weight: 700;
+}
+.how-work-ib p {
+  color: #ffffff;
+  font-weight: 400;
+}
+.bg_rebate {
+  background: #F5F9FF;
+  background: #F5F9FF url("assets/comm-background.png") no-repeat bottom right;
+  border-radius: 48px;
+  padding: 50px 100px 40px;
+  margin: 50px 0px;
+}
+.partner_text h2 {
+  font-size: 44px;
+  font-weight: 700;
+}
+.partner_text p {
+  color: #4A505C;
+  font-size: 16px;
+  padding: 5px 80px 20px 0px;
+}
+.become_btn {
+  background-color: #155FF6;
+  color: #fff;
+  padding: 8px 40px;
+  border-radius: 40px;
+  font-weight: 600;
+}
+@media (max-width: 767px) {
+  .bg_rebate {
+    padding: 0;
+  }
+}
+@media (max-width: 767px) {
+  .partner_text {
+    margin-bottom: 40px;
+    padding: 30px;
+  }
+}
+@media (max-width: 991px) {
+  .partner_text {
+    text-align: center !important;
+  }
+}
+@media (max-width: 767px) {
+  .partner_text h2 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .partner_text p {
+    padding: 0;
+  }
+}
+@media (max-width: 576px) {
+  .how-work-ib .why-bitdelta {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin: 2rem 0;
+  }
+}
+@media (max-width: 767px) {
+  .how-work-ib h2 {
+    text-align: center !important;
+  }
+}
+@media (max-width: 767px) {
+  .how-work-ib p {
+    text-align: center !important;
+  }
+}
+/*  */
+/* index page  */
+.world-trading {
+  padding: 100px 0px;
+}
+.world-trading .title {
+  text-align: center;
+}
+.world-trading .title h2 {
+  font-weight: 700;
+  font-size: 44px;
+  margin-bottom: 20px;
+}
+.world-trading .title h2 span {
+  color: #155FF6;
+}
+.world-trading .title p {
+  color: #3A404A;
+}
+.world-trading .first-image-text .title {
+  position: absolute;
+  top: 20px;
+  left: 24px;
+  font-weight: 600;
+  color: #fff;
+}
+.world-trading .first-image-text .description {
+  position: absolute;
+  bottom: 20px;
+  left: 24px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #fff;
+}
+.world-trading .card-main {
+  border-radius: 16px;
+  background: #F6F6F6;
+  padding: 24px;
+  height: 100%;
+}
+.world-trading .card-main h4 {
+  color: #3A404A;
+  font-weight: 600;
+}
+.world-trading .card-main .text-tertiary {
+  color: #67748A;
+  font-size: 48px;
+  font-weight: 275;
+}
+.world-trading .card-main .text-tertiary span {
+  color: #155FF6;
+}
+.world-trading .card-main .border {
+  border: 1px solid #67748A;
+  opacity: 0.37;
+}
+.world-trading .card-main .description {
+  color: #3A404A;
+  margin-top: 30px;
+}
+.world-trading .card-main .button-items {
+  color: #3A404A;
+  margin-top: 35px;
+}
+.world-trading .card-main .button-items a {
+  text-decoration: none;
+  font-weight: 600;
+}
+.world-trading .second-row {
+  padding-top: 20px !important;
+}
+.world-trading .first-image-text .third-image {
+  width: 260px;
+}
+.world-trading .first-image-text .third-image {
+  bottom: 0;
+  position: absolute;
+  left: 130px;
+  transition: none;
+  transform: none;
+}
+.world-trading .card-main {
+  border-radius: 16px;
+  background: #F6F6F6;
+  padding: 24px;
+  height: 100%;
+}
+.world-trading .card-main .card-bg-position {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.world-trading .card-main .border {
+  border: 1px solid #67748A;
+  opacity: 0.37;
+}
+.world-trading .card-main .fireblocks {
+  color: #3A404A;
+  font-size: 12px;
+  margin: 16px 0px;
+}
+.robust_icon {
+  width: 50%;
+  position: relative;
+  z-index: 99;
+}
+.robust_icon_iso {
+  width: 23%;
+}
+.about-bitdelta {
+  padding: 100px 0px;
+}
+.about-bitdelta .about-text h3 {
+  font-size: 44px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.about-bitdelta .about-text h3 span {
+  color: #155FF6;
+}
+.trading-day .trade-img {
+  position: relative;
+  height: 100%;
+}
+.trading-day .trade-img img {
+  width: 100%;
+  height: 100%;
+}
+.trading-day .trading-text {
+  background-color: #F6F6F6;
+  padding: 32px;
+  border-radius: 16px;
+  min-height: 100% !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.trading-day .trading-text p {
+  padding-bottom: 0px;
+  font-size: 16px;
+}
+.trading-day .trading-text a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #155FF6;
+  font-size: 16px;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.trading-day .trading-main {
+  padding: 50px 0px 100px 0px;
+}
+.trading-day .box-wrapper {
+  border-radius: 16px;
+  border: 0.4px solid #CDD2D7;
+  text-align: center;
+  padding: 20px;
+  height: 100%;
+}
+.trading-day .box-wrapper h4 {
+  padding: 15px 0px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.trading-day .box-wrapper a {
+  text-decoration: none;
+}
+.tradingimage{
+  width: 10px;
+}
+.diverse-markets {
+  padding: 70px 0px;
+  margin-bottom: 70px;
+}
+.diverse-markets .title {
+  text-align: center;
+}
+.diverse-markets .title h2 {
+  font-weight: 800;
+  font-size: 44px;
+  margin-bottom: 14px;
+}
+.diverse-markets .title h2 span {
+  color: #155FF6;
+}
+.diverse-markets .title p {
+  color: #3A404A;
+}
+.first-right-section h4 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 54px;
+}
+.first-right-section p {
+  color: #3A404A;
+}
+.first-right-section .sub-items {
+  margin: 34px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.advanceimg{
+  width: 10%;
+}
+.first-right-section .sub-items p {
+  margin: 0px !important;
+  font-weight: 600;
+  font-size: 20px;
+}
+.first-right-section p {
+  color: #3A404A;
+}
+.padding-top-row {
+  padding: 40px 0px 60px 0px;
+}
+.advancecardimage{
+  width: 80%;
+}
+.why-bitdelta .titile {
+  padding-bottom: 48px;
+}
+.why-bitdelta .titile h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 44px;
+}
+.why-bitdelta .titile h2 span {
+  color: #155FF6;
+}
+.why-bitdelta .img-box img {
+  width: 100%;
+  padding-right: 45px;
+}
+.why-bitdelta .why-content {
+  margin-bottom: 60px;
+}
+.why-bitdelta .why-content h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.why-bitdelta .why-content img {
+  width: 24px;
+  margin-right: 6px;
+}
+@media (max-width: 767px) {
+  .why-bitdelta .img-box img {
+    width: 100%;
+    padding-right: 0px;
+  }
+}
+@media (max-width: 591px) {
+  .why-bitdelta .padding-top-items {
+    padding-top: 40px;
+    padding-left: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .diverse-markets .image-section {
+    width: 100%;
+  }
+  .advancecardimage{
+    width: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  .diverse-markets .image-section.left {
+    padding-right: 0px;
+  }
+}
+@media (max-width: 1200px) {
+  .diverse-markets {
+    padding: 0px 0px !important;
+  }
+}
+
+@media (min-width: 991px) and (max-width: 1470px) {
+  .trading-day .box-wrapper .min-height-text {
+    min-height: calc(1.9em * 4);
+  }
+}
+@media (min-width: 767px) and (max-width: 1391px) {
+  .trading-day .trading-text {
+    padding: 16px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .about-bitdelta .about-text {
+    padding: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .world-trading .first-image-text .third-image {
+    left: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .world-trading .bg-image-third {
+    min-height: 350px;
+  }
+}
+@media (max-width: 767px) {
+  .world-trading .first-image-text h4 {
+    font-size: 16px !important;
+  }
+  .world-trading .card-main .card-bg-position img{
+    display: none;
+  }
+  .trade-across .titile h2 {
+    font-size: 30px;
+  }
+  .world-trading .title h2 {
+    font-size: 30px;
+  }
+  .diverse-markets .title h2{
+    font-size: 30px;
+  }
+  .first-right-section .sub-items{
+    padding-left: 20px;
+  }
+  .first-right-section h4{
+    margin-top: 10px;
+  }
+  .download-container .download-wrapper .get-started h2{
+    font-size: 35px;
+    text-align: center;
+  }
+  .client .main-clint-wrapper .text-wrapper{
+    padding: 30px;
+    padding-bottom: 0;
+  }
+  .retails-client{
+    padding-left: 30px !important;
+  }
+
+}
+@media (min-width: 1200px) {
+  .h4, h4 {
+    font-size: 1.5rem;
+  }
+}
+
+/* footer */
+.footer {
+  height: auto;
+  background-color: #202229;
+}
+.footer .footer-heading {
+  color: #fff;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 18px;
+  font-weight: 500;
+}
+.footer .footer-heading img {
+  position: relative;
+  bottom: 2px;
+  height: 18px;
+  width: 7px;
+  border-left: 7px solid #67748a;
+}
+.footer .footer-box a {
+  text-decoration: none !important;
+}
+.footer li {
+  margin: 5px;
+  color: #b5c3d3;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 14px;
+  font-weight: 400;
+  list-style: none;
+}
+.footer li img {
+  position: relative;
+  bottom: 2px;
+}
+.footer-widget-4 .textwidget li img{
+  width: auto;
+}
+.footer .footer-disclamer {
+  margin-bottom: 0px;
+}
+.footer .footer-disclamer {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+}
+.footer .footer-disclamer {
+  margin-top: 98px;
+  margin-bottom: 79px;
+  border-radius: 12px;
+  border: 0.5px solid #cdd2d7;
+}
+.footer .footer-disclamer .footer-disclamer-heading {
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  width: 81.025px;
+  height: 18.57px;
+  background-color: #202229;
+  color: #fff;
+  justify-content: center;
+  position: relative;
+  left: 15px;
+  bottom: 10px;
+}
+.footer .footer-disclamer .footer-disclamer-main {
+  padding: 20px;
+}
+.footer .footer-disclamer .footer-disclamer-main p {
+  margin-bottom: 12px !important;
+}
