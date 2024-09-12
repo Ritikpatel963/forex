@@ -14,6 +14,7 @@
             height: 100vh;
             margin: 0;
             padding: 0;
+            font-family: robotics !important;
         }
 
         .fixed-width-container {
