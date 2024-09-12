@@ -86,6 +86,19 @@
         .logo-image {
             width: 50%;
         }
+       .title p
+       { font-family: Avenir,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+              font-stretch: normal;
+              font-style: normal;
+              letter-spacing: normal;
+              font-weight: 500;
+              font-size: 14px;
+              letter-spacing: normal;
+              line-height: 1.38;
+              padding-top:20px;
+              padding-right:20px;
+
+}
 
         /* Hide background image and center the content for mobile */
         @media (max-width: 768px) {
@@ -111,49 +124,22 @@
             <div class="text-center mb-4" style="margin-top: 50px;">
                 <img src="assets/images/logo.png" alt=" Logo" class="img-fluid logo-image">
             </div>
+            <div class="title">
+                <p>
+                    Need help with your password?<br>
+                    Enter the email you have registered with us and we will help you to reset password.
+                </p>
+            </div>
             <form>
                 <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
                     <input type="email" class="form-control" id="email" placeholder="Email">
                 </div>
-                <div class="mb-3 password-wrapper">
-                    <label for="password" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="password" placeholder="Password">
-                    <span class="toggle-password">
-                        <img src="https://cdn-icons-png.flaticon.com/512/159/159604.png" alt="Show/Hide Icon" width="20" id="toggleIcon">
-                    </span>
-                </div>
-
-                <div class="forgot-password">
-                    <a href="forgetpassword.php">Forgot Password?</a>
-                </div>
-
-                <button type="submit" class="btn btn-primary">Sign In</button>
-
-                <div class="signup-text">
-                    <p>Don't have an account? <a href="registration.php">Sign Up</a></p>
-                </div>
+                <button type="submit" class="btn btn-primary">Resst Password</button>
             </form>
         </div>
     </div>
-
-    <script>
-        const passwordInput = document.getElementById('password');
-        const toggleIcon = document.getElementById('toggleIcon');
-
-        toggleIcon.addEventListener('click', function () {
-            const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
-            passwordInput.setAttribute('type', type);
-
-            if (type === 'password') {
-                toggleIcon.src = 'https://cdn-icons-png.flaticon.com/512/159/159604.png'; 
-            } else {
-                toggleIcon.src = 'https://cdn-icons-png.flaticon.com/512/565/565655.png'; 
-            }
-        });
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
