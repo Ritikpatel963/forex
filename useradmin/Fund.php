@@ -2,139 +2,172 @@
 include 'sidebar.php';
 ?>
 <style>
-    .funds-header {
+    .card {
+        border-radius: 15px;
+        border: none;
+    }
+
+    .card h5,
+    .card p {
+        color: #333;
+    }
+
+    .card .btn {
+        border-radius: 50px;
+    }
+
+    .table-responsive {
+        margin-top: 15px;
+    }
+
+    .text-danger {
+        color: red !important;
+    }
+
+    .text-success {
+        color: green !important;
+    }
+
+    .table th,
+    .table td {
+        vertical-align: middle;
+    }
+
+    @media (max-width: 768px) {
+        .table-responsive {
+            font-size: 14px;
+        }
+
+        .card .btn {
+            font-size: 12px;
+        }
+    }
+
+    .custom-card {
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 1rem;
+        background: linear-gradient(85deg, rgba(253, 121, 148, 1) 0%, rgba(253, 126, 169, 1) 100%);
+        border-radius: 20px;
+        padding: 20px;
+        max-width: 100%;
+        color: white;
+        margin: 10px 0;
     }
 
-    .funds-header h5 {
-        margin: 0;
-        font-weight: bold;
+    .custom-card-content {
+        flex: 1;
+        max-width: 60%;
     }
 
-    .balance-section {
-        display: flex;
-        align-items: center;
-        margin-bottom: 1rem;
+    .custom-card-content h3 {
+        font-size: 35px;
+        margin-bottom: 10px;
+        font-weight: 600;
     }
 
-    .balance-section h3 {
-        margin-right: 5px;
+    .custom-card-content p {
+        font-size: 16px;
+        margin-bottom: 20px;
     }
 
-    /* Default desktop layout */
-    .wallet-buttons {
-        display: flex;
-        gap: 10px;
-    }
-
-    .wallet-buttons button {
-        border-radius: 25px;
+    .custom-apply-btn {
+        background: linear-gradient(to right, #8971ea, #7f72ea, #7574ea, #6a75e9, #5f76e8);
+        color: white;
+        border: none;
         padding: 10px 20px;
-        font-size: 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
     }
 
-    .btn-primary {
-        background-color: #007bff;
-        border-color: #007bff;
+    .custom-apply-btn:hover {
+        background: linear-gradient(to right, #8971ea, #7f72ea, #7574ea, #6a75e9, #5f76e8);
     }
 
-    .btn-outline-primary {
-        border-color: #cce5ff;
+    .custom-card-img {
+        max-width: 35%;
+        border-radius: 15px;
     }
 
-    .btn a {
-        color: inherit;
-        /* Use the same color as the button */
-        text-decoration: none;
-        /* Remove underline */
-    }
-
-    .btn a:hover {
-        color: inherit;
-        /* Keep color the same on hover */
-    }
-
-    /* On mobile view, make buttons inline */
+    /* Mobile Responsiveness */
     @media (max-width: 768px) {
-        .wallet-buttons {
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-between;
+        .custom-card {
+            flex-direction: column;
+            text-align: center;
         }
 
-        .wallet-buttons button {
-            flex: 1;
-            /* Ensure buttons take up equal space */
-            margin-bottom: 10px;
-            /* Add spacing between buttons */
+        .custom-card-content {
+            max-width: 100%;
+            margin-bottom: 15px;
         }
 
-        .funds-header h5 {
-            font-size: 0.9rem;
+        .custom-card-img {
+            max-width: 80%;
         }
     }
 </style>
 </head>
 
 <body>
-    <div class="container my-4">
-        <!-- Funds Header -->
-        <div class="funds-header">
-            <h5>My Funds</h5>
-            <div>
-                <button class="btn btn-outline-secondary me-2"><a href="Transactions.php">Transactions</a></button>
-                <button class="btn btn-outline-secondary"><a href="deposite.php">Request History</a></button>
-            </div>
-        </div>
-
-        <!-- Balance Section -->
-        <div class="balance-section">
-            <h3>USD</h3>
-            <h1>0</h1>
-        </div>
-
-        <!-- Wallet Buttons -->
-        <div class="wallet-buttons mb-4">
-            <button class="btn btn-primary btn-lg d-flex align-items-center">
-                <i class="bi bi-wallet2 me-2"></i> Deposit
-            </button>
-            <button class="btn btn-outline-primary btn-lg d-flex align-items-center">
-                <i class="bi bi-arrow-left-right me-2"></i> Transfer
-            </button>
-            <button class="btn btn-outline-primary btn-lg d-flex align-items-center">
-                <i class="bi bi-credit-card me-2"></i> Withdraw
-            </button>
-        </div>
-    </div>
     <!--  -->
-    <div class="col-12 mt-5">
-        <div class="card">
-            <div class="card-body">
-                <h4 class="card-title">Wallet</h4>
-                <div class="table-responsive">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th scope="col">Id</th>
-                                <th scope="col">Currency</th>
-                                <th scope="col">Total Balance</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                            </tr>
-                        </tbody>
-                    </table>
+
+    <!--  -->
+    <div class="container my-4">
+        <!-- First Section - User Wallet Information -->
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <div class="custom-card">
+                    <div class="custom-card-content">
+                        <h3>Deposit</h3>
+                        <p>You can securely deposit money into your account anytime, anywhere with our 24/7 online service.</p>
+                        <button class="custom-apply-btn">Deposit Money</button>
+                    </div>
+                    <img src="assets/images/savings.png" alt="Illustration" class="custom-card-img">
+                </div>
+
+            </div>
+            <div class="col-md-6">
+                <div class="custom-card">
+                    <div class="custom-card-content">
+                        <h3>Withdraw</h3>
+                        <p>You can easily withdraw money from your account at any time with our fast and secure withdrawal service.</p>
+                        <button class="custom-apply-btn">Withdraw Money</button>
+                    </div>
+                    <img src="assets/images/purse.png" alt="Illustration" class="custom-card-img">
                 </div>
             </div>
         </div>
+
+        <!-- Third Section - Recent Transactions Table -->
+        <div class="card p-3">
+            <h4>Recent Transactions</h4>
+            <div class="recent-transactions">
+            <table id="zero_config" class="table table-striped table-bordered no-wrap">
+                    <thead>
+                        <tr>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Trading Account</th>
+                            <th>Type</th>
+                            <th>Account Details</th>
+                            <th>Date Created</th>
+                        </tr>
+
+                        </tr>
+
+                    </thead>
+                    <tbody>
+                        <tr>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
+    <!--  -->
     <?php
     include 'footer.php';
     ?>

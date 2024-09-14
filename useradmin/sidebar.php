@@ -95,28 +95,6 @@
                     <!-- ============================================================== -->
                     <!-- Right side toggle and nav items -->
                     <!-- ============================================================== -->
-                    <ul class="navbar-nav float-right">
-                        <!-- ============================================================== -->
-                        <!-- Search -->
-                        <!-- ============================================================== -->
-                        <li class="nav-item d-none d-md-block">
-                            <a class="nav-link" href="javascript:void(0)">
-                                <form>
-                                    <div class="customize-input">
-                                        <input class="form-control custom-shadow custom-radius border-0 bg-white"
-                                            type="search" placeholder="Search" aria-label="Search">
-                                        <i class="form-control-icon" data-feather="search"></i>
-                                    </div>
-                                </form>
-                            </a>
-                        </li>
-                        <!-- ============================================================== -->
-                        <!-- User profile and search -->
-                        <!-- ============================================================== -->
-                        <!-- ============================================================== -->
-                        <!-- User profile and search -->
-                        <!-- ============================================================== -->
-                    </ul>
                 </div>
             </nav>
         </header>
@@ -136,20 +114,9 @@
                                 aria-expanded="false"><i data-feather="home" class="feather-icon"></i><span
                                     class="hide-menu">Dashboard</span></a></li>
                         <li class="list-divider"></li>
-
-                        <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
-                                aria-expanded="false"><i data-feather="file-text" class="feather-icon"></i><span
-                                    class="hide-menu">Report</span></a>
-                            <ul aria-expanded="false" class="collapse  first-level base-level-line">
-                                <li class="sidebar-item"><a href="pendingorder.php" class="sidebar-link"><span
-                                            class="hide-menu"> Pending Order
-                                        </span></a>
-                                </li>
-                                <li class="sidebar-item"><a href="tradehistory.php" class="sidebar-link"><span
-                                            class="hide-menu"> Trade History
-                                        </span></a>
-                                </li>
-                            </ul>
+                        <li class="sidebar-item"><a href="tradehistory.php" class="sidebar-link"><i data-feather="file-text" class="feather-icon"></i><span
+                                    class="hide-menu"> Report
+                                </span></a>
                         </li>
                         <li class="sidebar-item">
                             <a class="sidebar-link sidebar-link" href="Chart.php" aria-expanded="false">
@@ -161,12 +128,9 @@
                         <li class="sidebar-item">
                             <a class="sidebar-link sidebar-link" href="Fund.php" aria-expanded="false">
                                 <i data-feather="dollar-sign" class="feather-icon"></i>
-                                <span class="hide-menu">Fund</span>
+                                <span class="hide-menu">Wallet</span>
                             </a>
                         </li>
-
-                        <li class="list-divider"></li>
-
                         <li class="list-divider"></li>
                         <li class="nav-small-cap"><span class="hide-menu">Extra</span></li>
                         <li class="sidebar-item">
@@ -175,7 +139,6 @@
                                 <span class="hide-menu">My Profile</span>
                             </a>
                         </li>
-
                         <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="authentication-login1.html"
                                 aria-expanded="false"><i data-feather="log-out" class="feather-icon"></i><span
                                     class="hide-menu">Logout</span></a></li>
@@ -192,3 +155,6 @@
         <!-- Page wrapper  -->
         <!-- ============================================================== -->
         <div class="page-wrapper">
+        <div class="container-fluid">
+        <!-- *************************************************************** -->
+       
