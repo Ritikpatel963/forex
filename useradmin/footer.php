@@ -1,13 +1,7 @@
                    </div>
                    </div>
                    </div>
-                   <!-- ============================================================== -->
-                   <!-- End Wrapper -->
-                   <!-- ============================================================== -->
-                   <!-- End Wrapper -->
-                   <!-- ============================================================== -->
-                   <!-- All Jquery -->
-                   <!-- ============================================================== -->
+
                    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
                    <script src="assets/libs/popper.js/dist/umd/popper.min.js"></script>
                    <script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -28,4 +22,5 @@
                    <script src="assets/extra-libs/jvector/jquery-jvectormap-world-mill-en.js"></script>
                    <script src="dist/js/pages/dashboards/dashboard1.min.js"></script>
                    </body>
+
                    </html>

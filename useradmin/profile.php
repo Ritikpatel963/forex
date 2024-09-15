@@ -86,21 +86,22 @@ include 'sidebar.php';
                         <input type="text" class="form-control" id="fullName" placeholder="Enter your full name">
                     </div>
                     <div class="mb-3">
-                        <label for="birthDate" class="form-label">Birthday</label>
-                        <input type="date" class="form-control" id="birthDate">
-                    </div>
-                    <div class="mb-3">
                         <label for="email" class="form-label">Email</label>
                         <input type="email" class="form-control" id="email" placeholder="Enter your email">
                     </div>
                     <div class="mb-3">
                         <label for="phoneNumber" class="form-label">Phone Number</label>
-                        <input type="text" class="form-control" id="phoneNumber" placeholder="Enter your phone number">
+                        <input type="text" class="form-control" id="phoneNumber" placeholder="Your phone number" disabled>
                     </div>
                     <div class="mb-3">
-                        <label for="bio" class="form-label">Bio</label>
-                        <textarea class="form-control" id="bio" placeholder="Type something about you"></textarea>
+                        <label for="new-passowrd" class="form-label">Old Password</label>
+                        <input type="password" class="form-control" id="phoneNumber" placeholder="Enter your Old password">
                     </div>
+                    <div class="mb-3">
+                        <label for="new-passowrd" class="form-label">New Password</label>
+                        <input type="password" class="form-control" id="phoneNumber" placeholder="Enter your new password">
+                    </div>
+
                     <button type="submit" class="btn savebutton">Save Changes</button>
                 </form>
             </div>           
